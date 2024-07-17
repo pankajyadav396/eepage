@@ -1,4 +1,4 @@
-function openNav() {
+function handleToggleNav() {
     document.getElementById("navBar").classList.toggle("start-0");
     document.body.classList.toggle("overflow-hidden");
     document.querySelector(".menu").classList.toggle("cross")

@@ -177,6 +177,10 @@
     cursor: pointer;
 }
 
+.bg-header {
+    min-height: 810px;
+}
+
 .custom-container {
     max-width: 1164px !important;
 }
@@ -327,6 +331,15 @@
     opacity: 1 !important;
 }
 
+/* ===========================tokinomiks================================== */
+.bg-tokenomiks {
+    background-image: url('../images/webp/bg-tokinomiks.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 965px;
+}
+
 @media (min-width:576px) {
     :root {
         /* font-size */
@@ -346,6 +359,11 @@
         min-height: 482px;
         margin-top: -60px;
     }
+
+    .min-h-stretch {
+        min-height: 450px;
+        margin-top: -60x;
+    }
 }
 
 @media (min-width:768px) {
@@ -362,16 +380,23 @@
         --text-3lg: 40px;
         --text-xxl: 72px;
     }
-    .text-ampl{
+
+    .text-ampl {
         transform: translateX(-50px);
+    }
+
+    .min-h-stretch {
+        min-height: 500px;
+        margin-top: -69px;
     }
 }
 
 @media (min-width:1024px) {
-    .text-ampl{
+    .text-ampl {
         transform: translateX(20px);
     }
 }
+
 @media (min-width:1140px) {
     :root {
         /* font-size */
@@ -389,8 +414,8 @@
     }
 
     .min-h-stretch {
-        min-height: 833px;
-        margin-top: -99px;
+        min-height: 680px;
+        margin-top: -88px;
     }
 }
 
@@ -411,9 +436,11 @@
     .max-w-463 {
         max-width: 463px;
     }
-}
 
-@media (min-width:1200px) {
+    .-transform-70 {
+        transform: translateY(-70px);
+    }
+
     .-mt-70 {
         margin-top: -70px;
     }
@@ -428,16 +455,23 @@
     }
 }
 
+@media (min-width:1299px) {
+    .min-h-stretch {
+        min-height: 833px;
+        margin-top: -99px;
+    }
+}
+
 @media (min-width:1550px) {
     .d-2xl-none {
-        display: none;
+        display: none !important;
     }
 
     .bg-header {
         background-image: url("../images/webp/bg-header.png");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: left;
+        background-size: 100% 90%;
+        background-position: top;
     }
 }
 
